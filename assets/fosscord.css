@@ -1,71 +1,34 @@
+
 /* loading spinner */
-#app-mount > div.app-1q1i1E > div.container-16j22k.fixClipping-3qAKRb > div.content-1-zrf2 > video {
+#app-mount > div.app-1q1i1E > div.container-16j22k.fixClipping-3qAKRb > div.content-1-zrf2 > .ready-36e6Vk + .text-3c9Zq1::before {
+	content: "" !important;
 	filter: opacity(1);
-	background: url("http://www.clipartbest.com/cliparts/7ca/6Rr/7ca6RrLAi.gif");
-	background-size: contain;
-	/* width: 64px;
-    height: 64px; */
+	position: absolute;
+	bottom: 100px;
+	left: 50px;
+	width: 200px;
+	height: 200px;
 	padding-bottom: 64px;
+	background-size: contain;
 	background-repeat: no-repeat;
+	background: url("/assets/stupidcat.gif") center/80% no-repeat;
+}
+#app-mount > div.app-1q1i1E > div.container-16j22k.fixClipping-3qAKRb > div.content-1-zrf2 > video {
+	visibility: hidden !important;
+}
+#app-mount > div.app-1q1i1E > div.container-16j22k.fixClipping-3qAKRb > div.content-1-zrf2 > div.text-3c9Zq1 > div.tip-2cgoli:after {
+	content: " Also your mom's is a hoe!";
 }
 
 /* home button icon */
-#app-mount
-	> div.app-1q1i1E
-	> div
-	> div.layers-3iHuyZ.layers-3q14ss
-	> div
-	> div
-	> nav
-	> ul
-	> div.scroller-1Bvpku.none-2Eo-qx.scrollerBase-289Jih
-	> div.tutorialContainer-2sGCg9
-	> div
-	> div.listItemWrapper-KhRmzM
-	> div
-	> svg
-	> foreignObject
-	> div
-	> div {
-	background-image: url(https://raw.githubusercontent.com/fosscord/fosscord/master/assets-rebrand/svg/Fosscord-Icon-Rounded-Subtract.svg);
-	background-size: contain;
-	border-radius: 50%;
+#app-mount > div.app-1q1i1E > div > div.layers-3iHuyZ.layers-3q14ss > div > div > nav > ul > div.scroller-1Bvpku.none-2Eo-qx.scrollerBase-289Jih > div.tutorialContainer-2sGCg9 > div > div.listItemWrapper-KhRmzM > div > svg > foreignObject > div > div
+{
+    background-image: url("https://cdn.discordapp.com/attachments/616304833237876761/968255682631598090/discord-avatar-512-JM2FF.png");
+    background-size: contain;
+    border-radius: 50%;
 }
 
-#app-mount
-	> div.app-1q1i1E
-	> div
-	> div.layers-3iHuyZ.layers-3q14ss
-	> div
-	> div
-	> nav
-	> ul
-	> div.scroller-1Bvpku.none-2Eo-qx.scrollerBase-289Jih
-	> div.tutorialContainer-2sGCg9
-	> div
-	> div.listItemWrapper-KhRmzM
-	> div
-	> svg
-	> foreignObject
-	> div
-	> div,
-#app-mount
-	> div.app-1q1i1E
-	> div
-	> div.layers-3iHuyZ.layers-3q14ss
-	> div
-	> div
-	> nav
-	> ul
-	> div.scroller-1Bvpku.none-2Eo-qx.scrollerBase-289Jih
-	> div.tutorialContainer-2sGCg9
-	> div
-	> div.listItemWrapper-KhRmzM
-	> div
-	> svg
-	> foreignObject
-	> div
-	> div:hover {
+#app-mount > div.app-1q1i1E > div > div.layers-3iHuyZ.layers-3q14ss > div > div > nav > ul > div.scroller-1Bvpku.none-2Eo-qx.scrollerBase-289Jih > div.tutorialContainer-2sGCg9 > div > div.listItemWrapper-KhRmzM > div > svg > foreignObject > div > div, #app-mount > div.app-1q1i1E > div > div.layers-3iHuyZ.layers-3q14ss > div > div > nav > ul > div.scroller-1Bvpku.none-2Eo-qx.scrollerBase-289Jih > div.tutorialContainer-2sGCg9 > div > div.listItemWrapper-KhRmzM > div > svg > foreignObject > div > div:hover {
 	background-color: white;
 }
 /* Login QR */
@@ -87,6 +50,17 @@
 /* Thread permissions etc popups */
 #app-mount > div.app-1q1i1E > div > div.layers-3iHuyZ.layers-3q14ss > div > div > div > div.content-98HsJk > div.sidebar-2K8pFh.hasNotice-1XRy4h > nav > div.container-3O_wAf,
 /* home button icon */
-#app-mount > div.app-1q1i1E > div > div.layers-3iHuyZ.layers-3q14ss > div > div > nav > ul > div.scroller-1Bvpku.none-2Eo-qx.scrollerBase-289Jih > div.tutorialContainer-2sGCg9 > div > div.listItemWrapper-KhRmzM > div > svg > foreignObject > div > div > svg {
-	display: none;
+#app-mount > div.app-1q1i1E > div > div.layers-3iHuyZ.layers-3q14ss > div > div > nav > ul > div.scroller-1Bvpku.none-2Eo-qx.scrollerBase-289Jih > div.tutorialContainer-2sGCg9 > div > div.listItemWrapper-KhRmzM > div > svg > foreignObject > div > div > svg
+{
+    display: none;
+}
+
+/* Nekord custom colors */
+:root {
+	--brand-experiment: #4289DA !important;
+	--brand-experiment-360: #5796de !important;
+	--brand-experiment-560: #266fc3 !important;
+	--brand-experiment-600: #2263ae !important;
+	--control-brand-foreground: #6da4e2 !important;
+	--control-brand-foreground-new: #4289DA !important;
 }
