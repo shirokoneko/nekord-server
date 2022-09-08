@@ -1,12 +1,12 @@
 /* replace tos acceptance popup */
 #app-mount > div:nth-child(7) > div > div > div.tooltipContent-bqVLWK {
-	visibility: hidden;
+    visibility: hidden;
 }
-#app-mount > div:nth-child(7) > div > div > div.tooltipContent-bqVLWK::after {
-	visibility: visible;
-	display: block;
-	content: "You need to agree to this instance's rules to continue";
-	margin-top: -32px;
+#app-mount > div:nth-child(7) > div > div > div.tooltipContent-bqVLWK::after{
+    visibility: visible;
+    display: block;
+    content: "You need to agree to Nekord's rules to continue";
+    margin-top: -32px;
 }
 /* replace login header */
 #app-mount > div.app-1q1i1E > div > div > div > div > form > div > div > div.mainLoginContainer-1ddwnR > h3 {
@@ -14,7 +14,7 @@
 }
 h3.title-jXR8lp.marginBottom8-AtZOdT.base-1x0h_U.size24-RIRrxO::after {
 	margin-top: -32px;
-	content: "Welcome to Fosscord!";
+	content: "Welcome to Nekord :3";
 	visibility: visible;
 	display: block;
 }
@@ -22,10 +22,11 @@ h3.title-jXR8lp.marginBottom8-AtZOdT.base-1x0h_U.size24-RIRrxO::after {
 /* Logo in top left when bg removed */
 #app-mount > div.app-1q1i1E > div > a {
 	/* replace me: original dimensions: 130x36 */
-	background: url(https://raw.githubusercontent.com/fosscord/fosscord/master/assets-rebrand/svg/Fosscord-Wordmark-Gradient.svg);
-	width: 130px;
-	height: 23px;
+	background: url("/assets/login-icon.png");
+	width: 420px;
+	height: 169px;
 	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 /* replace TOS text */
@@ -57,7 +58,7 @@ h3.title-jXR8lp.marginBottom8-AtZOdT.base-1x0h_U.size24-RIRrxO::after {
 	> label
 	> div.label-cywgfr.labelClickable-11AuB8.labelForward-1wfipV::after {
 	visibility: visible;
-	content: "I have read and agree with the rules set by this instance.";
+	content: "I have read and agree with the Nekord rules.";
 	display: block;
 	margin-top: -16px;
 }
@@ -65,4 +66,14 @@ h3.title-jXR8lp.marginBottom8-AtZOdT.base-1x0h_U.size24-RIRrxO::after {
 /* shrink login box to same size as register */
 .authBoxExpanded-2jqaBe {
 	width: 480px !important;
+}
+
+/* Nekord custom login bg */
+.wrapper-6URcxg {
+	position: absolute;
+	align-items: center;
+	justify-content: center !important;
+	background: url("/assets/background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
 }
